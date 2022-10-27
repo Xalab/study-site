@@ -1,0 +1,23 @@
+{
+  "name": "study-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Xalab/study-site.git"
+  },
+  "author": "Siatoslav",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Xalab/study-site/issues"
+  },
+  "homepage": "https://github.com/Xalab/study-site#readme",
+  "dependencies": {
+    "express": "^4.18.2",
+    "nodemon": "^2.0.20"
+  }
+}
