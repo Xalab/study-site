@@ -9,6 +9,7 @@ nav {
     width: 100%;
     max-width: 1200px;
     margin: auto;
+    margin-bottom: 50px;
     
 }
 
@@ -35,6 +36,146 @@ nav {
 .ul-nav>li:first-child {
     margin: 10px 10% 10px 10px;
     padding-top: 0;
+}
+
+main {
+    width: 1200px;
+    margin: auto;
+}
+
+.main-picture {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.main-picture > img {
+    max-width: 1200px;
+    
+}
+
+.main-text {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    width: 1200px;
+    margin-bottom: 50px;
+}
+
+.main-text > img {
+    width: 600px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.main-text > div {
+    display: inline-block;
+}
+
+.main-text > div > h1 {
+    padding-bottom: 10px;
+    font-size: 40px;
+}
+
+.main-text > div > p {
+    font-size: 24px;
+}
+
+.whatwedo {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    max-width: 1200px;
+}
+
+.whatwedo > h1 {
+    text-align: center;
+    margin-bottom: 50px;
+    font-size: 40px;
+}
+
+.wedo {
+    display: inline-flex;
+    flex-flow: row wrap;
+}
+
+.wedo > div {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 380px;
+    margin-bottom: 20px;
+    margin-right: 20px;
+}
+
+.wedo-h1, .icon {
+    text-align: center;
+    margin-bottom: 5px;
+}
+
+.icon {
+    font-size: 30px;
+}
+
+.wedo-h1 {
+    font-size: 24px;
+}
+
+.wedo-p {
+   font-size: 20px;
+}
+
+.whywe {
+    display: inline-flex;
+    flex-flow: column nowrap;
+    width: 1200px;
+}
+
+.whywe > h1 {
+    text-align: center;
+    font-size: 40px;
+    padding: 20px;
+}
+
+.whywe > div {
+    display: inline-flex;
+    flex-flow: row wrap;
+    width: 1200px;
+}
+
+.whywe > div > div {
+    width: 580px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.whywe > div > div > p {
+    font-size: 20px;
+}
+
+.partners {
+    text-align: center;
+}
+
+.partners > h1 {
+    font-size: 40px;
+}
+
+footer {
+    display: inline-flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 100%;
+    background-color: black;
+    color: aliceblue;
+}
+
+footer > div {
+    width: 400px;
+}
+
+footer > div > h1 {
+    padding: 10px;
+}
+
+footer > div > h2 {
+    padding: 10px;
 }
 
 @media only screen and (max-width: 768px) {
