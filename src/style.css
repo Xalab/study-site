@@ -1,6 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap');
+
 * {
     padding: 0;
     margin: 0;
+}
+
+@keyframes rise {
+    0%   { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+.rise-img {
+    animation: rise 0.8s;
+}
+
+.rise-h {
+    animation: rise 1s;
+}
+
+.rise-p {
+    animation: rise 1.2s;
+}
+
+body {
+    background-color: #F6F5F1;
+}
+
+p {
+    font-family:'Raleway', sans-serif;
+}
+
+h1 {
+    font-family:'Playfair Display';
+}
+
+h2 {
+    font-family:'Playfair Display';
+}
+
+.raleway {
+    font-family:'Raleway', sans-serif;
 }
 
 nav {
@@ -151,10 +191,12 @@ main {
 
 .partners {
     text-align: center;
+    margin-bottom: 30px;
 }
 
 .partners > h1 {
     font-size: 40px;
+    padding: 20px;
 }
 
 .imgs > img {
@@ -173,14 +215,21 @@ footer {
 
 footer > div {
     width: 400px;
+    padding: 20px;
 }
 
 footer > div > h1 {
+    font-size: 26px;
     padding: 10px;
 }
 
 footer > div > h2 {
     padding: 10px;
+    font-size: 18px;
+}
+
+footer > div > p {
+    padding: 5px;
 }
 
 @media only screen and (max-width: 768px) {
