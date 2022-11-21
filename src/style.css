@@ -157,6 +157,11 @@ main {
     font-size: 40px;
 }
 
+.imgs > img {
+    height: 50px;
+    padding: 15px;
+}
+
 footer {
     display: inline-flex;
     flex-flow: row nowrap;
