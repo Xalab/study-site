@@ -6,21 +6,87 @@
     margin: 0;
 }
 
-@keyframes rise {
+@keyframes fast-rise {
     0%   { opacity: 0; }
     100% { opacity: 1; }
 }
 
+@keyframes medium-rise {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes long-rise {
+    0%   { opacity: 0; }
+    50%  { opacity: 0; }
+    75%  { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes back-rise {
+    0%   { opacity: 1; }
+    100% { opacity: 0; }
+}
+
+@keyframes border-rise {
+    
+    0%   { border-bottom: 2px solid rgba(0, 0, 0, .01); }
+    100% { border-bottom: 2px solid rgba(0, 0, 0); }
+}
+
+@keyframes border-hide {
+    
+    0%   { border-bottom: 2px solid rgba(0, 0, 0); }
+    100% { border-bottom: 2px solid rgba(0, 0, 0, .01); }
+}
+
+.first-wave-rise-1s {
+    animation: fast-rise 1s;
+}
+
+.first-wave-rise-1-3s {
+    animation: fast-rise 1.3s;
+}
+
+.first-wave-rise-1-6s {
+    animation: fast-rise 1.6s;
+}
+
+.first-wave-rise-1-9s {
+    animation: fast-rise 1.9s;
+}
+
+.first-wave-rise-2-2s {
+    animation: fast-rise 2.2s;
+}
+
+.first-wave-rise-2-5s {
+    animation: fast-rise 2.5s;
+}
+
+.first-wave-rise-2-8s {
+    animation: fast-rise 2.8s;
+}
+
 .rise-img {
-    animation: rise 0.8s;
+    animation: fast-rise 1s;
+}
+
+.rise-nav {
+    animation: long-rise 3s;
 }
 
 .rise-h {
-    animation: rise 1s;
+    animation: fast-rise 1.2s;
 }
 
 .rise-p {
-    animation: rise 1.2s;
+    animation: long-rise 2s;
+}
+
+html {
+    scroll-behavior: smooth;
 }
 
 body {
@@ -37,6 +103,16 @@ h1 {
 
 h2 {
     font-family:'Playfair Display';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+a:visited {
+    text-decoration: none;
+    color: black;
 }
 
 .raleway {
@@ -71,6 +147,11 @@ nav {
     margin: 10px;
     width: 20%;
     padding-top: 35px;
+}
+
+.ul-nav>li:hover {
+    animation: border-rise 1s;
+    padding-top: 37px;
 }
 
 .ul-nav>li:first-child {
